@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,900&display=swap");
 * {
   -webkit-box-sizing: border-box;
   -o-box-sizing: border-box;
@@ -129,6 +130,25 @@ a:visited {
   background: #f7f7f7;
   -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
   box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+  position: relative;
+}
+
+.services .section-head {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.services .section-head h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  position: relative;
+  display: inline-block;
+  z-index: 4;
+}
+
+.service-row {
+  height: 640px;
   position: relative;
 }
 /*# sourceMappingURL=style.css.map */
