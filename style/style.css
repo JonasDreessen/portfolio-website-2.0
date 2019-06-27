@@ -115,6 +115,12 @@ a:visited {
   padding-top: 40px;
 }
 
+.hero-Information h5 {
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
 .skills {
   margin-top: 30px;
 }
@@ -133,9 +139,14 @@ a:visited {
   position: relative;
 }
 
+.services {
+  background: #f7f7f7;
+}
+
 .services .section-head {
   margin-bottom: 80px;
   text-align: center;
+  padding-top: 60px;
 }
 
 .services .section-head h3 {
@@ -148,7 +159,60 @@ a:visited {
 }
 
 .service-row {
-  height: 640px;
   position: relative;
+  padding-bottom: 80px;
+}
+
+.hero-section,
+.services-section {
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+.services-item {
+  border: 0.5px solid #0000001f;
+  padding: 20px 60px;
+  border-radius: 7px;
+}
+
+.services-item h6 {
+  font-weight: bold;
+  font-size: 1.14em;
+  margin-bottom: 30px;
+}
+
+.services-item p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 2em;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.services-item .services-logo {
+  margin-bottom: 30px;
+}
+
+.services-item .services-logo img {
+  width: 60px;
+  height: auto;
+}
+
+.contact-row {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.input-from-item {
+  padding: 2px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  border: 1px solid;
 }
 /*# sourceMappingURL=style.css.map */
