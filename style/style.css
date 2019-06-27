@@ -209,6 +209,14 @@ a:visited {
   display: flex;
 }
 
+.contact-right-side {
+  margin-right: auto;
+}
+
+.contact-left-side {
+  margin-left: auto;
+}
+
 .input-from-item {
   padding: 2px;
   margin-bottom: 10px;
