@@ -220,10 +220,19 @@ a:visited {
 
 .input-from-item{
     padding: 2px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     border-radius: 10px;
     border: 1px solid;
 }
 
+
+#submit-message{
+    display: block;
+    width: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    background: lightgrey;
+}
 
 
