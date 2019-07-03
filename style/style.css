@@ -281,4 +281,14 @@ a:visited {
   background: #1c1c1c;
   color: white;
 }
+
+.footer-section .row {
+  background-color: #1c1c1c;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-section .row div {
+  color: #cccc;
+}
 /*# sourceMappingURL=style.css.map */
