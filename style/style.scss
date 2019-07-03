@@ -215,6 +215,9 @@ a:visited {
     }
 }
 
+.contact-section{
+    padding-bottom: 100px;
+}
 
 .section-head {
     margin-bottom: 80px;
@@ -232,6 +235,11 @@ a:visited {
     }
 }
 
+.contact-column {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .info {
     display: flex;
 }
@@ -247,3 +255,38 @@ a:visited {
     -webkit-transition: all .5s;
     transition: all .5s;
 }
+
+.form-group {
+    margin-bottom: 15px;
+
+    input {
+        width: 100%;
+        border: 0;
+        border-radius: 5px;
+        padding: 10px;
+        background: #f4f4f4;
+    }
+}
+
+#form_message {
+    height: 160px;
+    max-height: 160px;
+    max-width: 100%;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f4f4f4;
+}
+
+.buton{
+    padding: 10px 40px;
+    border: 1px solid #1c1c1c;
+    border-radius: 5px;
+    font-size: 13px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    background: #1c1c1c;
+    color: white;
+}
+
