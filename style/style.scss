@@ -151,7 +151,7 @@ a:visited {
     background: #f7f7f7;
 
     .section-head {
-        margin-bottom: 80px;
+        margin-bottom: 70px;
         text-align: center;
         padding-top: 60px;
 
@@ -172,16 +172,22 @@ a:visited {
     padding-bottom: 80px;
 }
 
-.hero-section,
-.services-section {
-    margin-top: 5em;
-    margin-bottom: 5em;
+.hero-section, .services-section{
+    margin-bottom: 80px;
+}
+
+.leftside,
+.middle,
+.rightside {
+    margin-top: 10px;
 }
 
 .services-item {
-    border: 0.5px solid #0000001f;
+    background-color: #fff;
     padding: 20px 60px;
     border-radius: 7px;
+    -webkit-box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
 
     h6 {
         font-weight: bold;
@@ -208,37 +214,19 @@ a:visited {
     }
 }
 
-.contact-row{
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
 
-.contact-container{
-    display: flex;
-
-}
-.contact-right-side{
+.section-head {
+    margin-bottom: 70px;
+    text-align: center;
     margin-right: auto;
-}
-.contact-left-side{
     margin-left: auto;
-    
+
+    h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        font-size: 40px;
+        position: relative;
+        display: inline-block;
+        z-index: 4;
+    }
 }
-.input-from-item{
-    padding: 2px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    border: 1px solid;
-}
-
-
-#submit-message{
-    display: block;
-    width: 100px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 20px;
-    background: lightgrey;
-}
-
-
