@@ -172,7 +172,8 @@ a:visited {
     padding-bottom: 80px;
 }
 
-.hero-section, .services-section{
+.hero-section,
+.services-section {
     margin-bottom: 80px;
 }
 
@@ -216,10 +217,10 @@ a:visited {
 
 
 .section-head {
-    margin-bottom: 70px;
+    margin-bottom: 80px;
     text-align: center;
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
 
     h3 {
         font-family: 'Montserrat', sans-serif;
@@ -229,4 +230,20 @@ a:visited {
         display: inline-block;
         z-index: 4;
     }
+}
+
+.info {
+    display: flex;
+}
+
+.icon {
+    font-size: 25px;
+    margin-bottom: 15px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    -webkit-transition: all .5s;
+    transition: all .5s;
 }
