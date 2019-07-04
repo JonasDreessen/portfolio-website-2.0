@@ -44,15 +44,19 @@ a:visited {
     padding: 20px 100px 0 100px;
 }
 
-.navbar-brand{
+.navbar-brand {
     color: black;
     font-family: 'montserat', sans-serif;
     font-weight: 800;
     letter-spacing: 2px;
 }
 
-.navbar-nav{
+.navbar-nav {
     margin-left: auto;
+}
+
+.nav-link {
+    color: black;
 }
 
 #home {
@@ -95,7 +99,7 @@ a:visited {
     margin: auto;
     color: #fff;
     text-align: center;
-    
+
     h5 {
         font-size: 50px;
         font-weight: 800;
@@ -127,12 +131,34 @@ a:visited {
 
         .skillprogress {
             width: 100%;
-            padding: 5px 10px;
             border-radius: 5px;
             background: #f7f7f7;
             -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
             box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
             position: relative;
+            height: 25px;
+
+            h6 {
+                color: white;
+            }
+
+        }
+
+        .skill-percent {
+            position: absolute;
+            line-height: 25px;
+            top: 0;
+            left: 0;
+            padding-left: 10px;
+            height: 100%;
+            width: 1%;
+            border-radius: 5px;
+            background-color: #1c1c1c;
+            //-webkit-transition: all 1s;
+            //transition: all 1s;
+            color: white;
+
+            
         }
     }
 }
@@ -247,7 +273,7 @@ a:visited {
     display: inline-block;
 }
 
-.contact-details-holder{
+.contact-details-holder {
     margin-bottom: 80px;
 }
 

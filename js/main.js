@@ -41,3 +41,50 @@ function deletingEffect() {
 
 typingEffect();
 
+function move() {
+    var elem = document.querySelectorAll('.skill-percent');    
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= elem[0].dataset.percent) {
+        clearInterval(id);
+      } else {
+        width+= 0.8; 
+        elem[0].style.width = width + '%'; 
+      }
+    }
+  }
+
+  move();
+
+  function move1() {
+    var elem = document.querySelectorAll('.skill-percent');    
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= elem[1].dataset.percent) {
+        clearInterval(id);
+      } else {
+        width+= 0.8; 
+        elem[1].style.width = width + '%'; 
+      }
+    }
+  }
+
+  move1();
+
+  function move2() {
+    var elem = document.querySelectorAll('.skill-percent');    
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= elem[2].dataset.percent) {
+        clearInterval(id);
+      } else {
+        width+= 0.8; 
+        elem[2].style.width = width + '%'; 
+      }
+    }
+  }
+
+  move2();
