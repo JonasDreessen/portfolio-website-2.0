@@ -41,28 +41,18 @@ a:visited {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 0 30px;
+    padding: 20px 100px 0 100px;
+}
 
-    .container {
-        .header-logo {
-            float: left;
-            font-size: 18px;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            color: black;
-            font-family: 'Montserrat', sans-serif;
-        }
+.navbar-brand{
+    color: black;
+    font-family: 'montserat', sans-serif;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
 
-        .header-items {
-            list-style: none;
-
-            li {
-                display: inline-flex;
-                padding: 10px;
-            }
-        }
-    }
+.navbar-nav{
+    margin-left: auto;
 }
 
 #home {
