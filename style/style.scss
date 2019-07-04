@@ -1,15 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,900&display=swap');
-@media only screen and (max-width: 600px) {
-    #home {
-        background: url("../images/header-background.jpg") no-repeat center center scroll;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        height: 100vh;
-    }
-  }
+
+
+
 
 * {
     -webkit-box-sizing: border-box;
@@ -70,7 +63,8 @@ a:visited {
 }
 
 #home {
-    background: url("../images/header-background.jpg") no-repeat center center fixed;
+    background: url("../images/header-background.jpg") no-repeat center center;
+    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -333,3 +327,14 @@ a:visited {
     }
 
 }
+@media only screen and (max-width: 600px) {
+    #home {
+        background: #000;
+        background: url("../images/header-background.jpg") no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 100vh;
+    }
+  }

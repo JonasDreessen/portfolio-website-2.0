@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,900&display=swap");
-@media only screen and (max-width: 600px) {
-  #home {
-    background: url("../images/header-background.jpg") no-repeat center center scroll;
-    background-size: cover;
-    height: 100vh;
-  }
-}
-
 * {
   -webkit-box-sizing: border-box;
   -o-box-sizing: border-box;
@@ -66,7 +58,8 @@ a:visited {
 }
 
 #home {
-  background: url("../images/header-background.jpg") no-repeat center center fixed;
+  background: url("../images/header-background.jpg") no-repeat center center;
+  background-attachment: fixed;
   background-size: cover;
   height: 100vh;
 }
@@ -314,5 +307,14 @@ a:visited {
 
 .footer-section .row div {
   color: #cccc;
+}
+
+@media only screen and (max-width: 600px) {
+  #home {
+    background: #000;
+    background: url("../images/header-background.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+  }
 }
 /*# sourceMappingURL=style.css.map */
