@@ -64,18 +64,17 @@ a:visited {
   height: 100vh;
 }
 
-.header:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #000;
-  opacity: .05;
-  z-index: 2;
-}
-
+/*.header:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: .05;
+    z-index: 2;
+}*/
 .v-middle {
   top: 50%;
   left: 0;
@@ -102,8 +101,11 @@ a:visited {
 }
 
 .hero-image {
+  max-width: 200px;
   width: 100%;
   height: auto;
+  text-align: center;
+  margin: 40px;
 }
 
 .hero-Information {
@@ -260,6 +262,10 @@ a:visited {
   -webkit-transition: all .5s;
   transition: all .5s;
   display: inline-block;
+}
+
+.icon a {
+  color: black;
 }
 
 .contact-details-holder {

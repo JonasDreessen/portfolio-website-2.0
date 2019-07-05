@@ -15,24 +15,10 @@
 </head>
 
 <body>
-  
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Features</a>
-            <a class="nav-item nav-link" href="#">Pricing</a>
-            <a class="nav-item nav-link disabled" href="#">Disabled</a>
-          </div>
-        </div>
-      </nav>
-  
-  
-    <!--  <nav class="navbar navbar-expand-lg navbar-light">
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" style="color:black" href="#">Dreessen</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,7 +40,7 @@
                 </li>
             </ul>
         </div>
-    </nav> -->
+    </nav>
 
     <section id="home" class="header">
         <div class="v-middle">
@@ -73,7 +59,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <img src="./images/dog.png" alt="dog" class="hero-image">
+                    <img src="./images/profile-pic.png" alt="dog" class="hero-image">
                 </div>
                 <div class="col-md-7 hero-Information">
                     <h5 class="hero-infomation-title title">About Me</h5>
@@ -124,7 +110,7 @@
                         <div class="services-logo">
                             <img src="./images/backend.png" alt="back-end">
                         </div>
-                        <h6>back-end development</h6>
+                        <h6>Development</h6>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum facere dolores.</p>
                     </div>
                 </div>
@@ -154,46 +140,55 @@
                     <div class="info text-center mb-50 contact-details-holder">
                         <div class="col-md-4">
                             <div class="item">
-                                <span class="icon"><i class="fa fa-location-arrow"></i></span>
+                                <span class="icon"> <a
+                                        href="https://www.google.com/maps/place/Beauvoislaan+106,+2920+Kalmthout/@51.3705478,4.489049,17z/data=!3m1!4b1!4m5!3m4!1s0x47c40f61ed7e2c03:0x5dc355d94c1bd8e3!8m2!3d51.3705478!4d4.4912377"
+                                        target="_blank"><i class="fa fa-location-arrow"></i></a> </span>
                                 <h6>adress</h6>
-                                <p>Beauvoislaan 106, 2920 Kalmthout</p>
+
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="item">
-                                <span class="icon"><i class="fa fa-envelope"></i></span>
+                                <span class="icon"> <a
+                                        href="mailto:jonas-dreessen@outlook.com?subject= Asking Questions"><i
+                                            class="fa fa-envelope"></i></a></span>
                                 <h6>email</h6>
-                                <p> Jonas-Dreessen@outlook.com</p>
+
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="item">
-                                <span class="icon"><i class="fa fa-phone"></i></span>
+                                <span class="icon"><a href="tel:0032493706613"><i class="fa fa-phone"></i></a></span>
                                 <h6>Phone</h6>
-                                <p>0032 49 37 066 13</p>
                             </div>
                         </div>
                     </div>
+                    <form action="https://formspree.io/jonas-dreessen@outlook.com" method="POST">
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input id="form_name" type="text" placeholder="name">
+                        
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input id="form_name" type="text" placeholder="name"
+                                    name="name">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input id="email" type="text" placeholder="email">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input id="email" type="text" placeholder="email"
+                                    name="_replyto">
+                                </div>
                             </div>
-                        </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
                                 <textarea name="message" id="form_message" rows="4" placeholder="message"></textarea>
                             </div>
-                            <input type="submit" value="Submit" class="buton buton-bg disabled">
+                            <input type="submit" class="buton buton-bg disabled"
+                            value="Send">
                         </div>
                     </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -212,7 +207,6 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -223,6 +217,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="./js/main.js"></script>
+
 </body>
 
 </html>
