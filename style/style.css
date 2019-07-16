@@ -118,15 +118,33 @@ a:visited {
   margin-bottom: 20px;
 }
 
+.hero-Information .skill-buton {
+  background-color: transparent;
+  color: black;
+}
+
+.hero-Information .skill-buton a {
+  color: black;
+}
+
+.hero-Information .skill-buton:hover {
+  background-color: black;
+  color: white;
+}
+
+.hero-Information .skill-buton:hover a:hover {
+  color: white;
+}
+
 .skills {
   margin-top: 30px;
 }
 
-.skills .item {
+.item {
   margin-bottom: 30px;
 }
 
-.skills .item .skillprogress {
+.item .skillprogress {
   width: 100%;
   border-radius: 5px;
   background: #f7f7f7;
@@ -136,11 +154,11 @@ a:visited {
   height: 25px;
 }
 
-.skills .item .skillprogress h6 {
+.item .skillprogress h6 {
   color: white;
 }
 
-.skills .item .skill-percent {
+.item .skill-percent {
   position: absolute;
   line-height: 25px;
   top: 0;
