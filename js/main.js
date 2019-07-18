@@ -1,4 +1,65 @@
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
+
+window.addEventListener('scroll', getScrollPosition);
+function getScrollPosition(){
+  return scrollY;
+}
+
+// navbar fixed
+function getVmiddlePosition(){
+  let elem = document.querySelector('.hero-section');
+  let elemPosition = elem.getBoundingClientRect().bottom;
+  return elemPosition;
+}
+getVmiddlePosition();
+
+window.addEventListener('scroll', compareVmiddleWithScrollY);
+
+function compareVmiddleWithScrollY(){
+  if (getScrollPosition() > getVmiddlePosition()){
+    giveNavbarFixedPosition();
+  } else {
+    giveNavbarAbsolutePosition();
+  }
+}
+
+function giveNavbarFixedPosition(){
+  var navbar = document.querySelector('.navbar');
+  navbar.style.position = 'fixed';
+  navbar.style.zIndex = '10000';
+  navbar.style.backgroundColor = "white";
+  hideNavbrand();
+}
+
+function giveNavbarAbsolutePosition(){
+  var navbar = document.querySelector('.navbar');
+  navbar.style.position = 'absolute';
+  navbar.style.backgroundColor = "transparent";
+  showNavBrand();
+}
+
+function hideNavbrand(){
+  var navBrand = document.querySelector('.navbar-brand');
+  navBrand.style.display = "none";
+}
+
+function showNavBrand(){
+  var navBrand = document.querySelector('.navbar-brand');
+  navBrand.style.display = 'block';
+}
+
+
 // typing and deleting effect.
+
+
 
 animatedText_span = document.getElementById("animated-Text");
 const words = ["Jonas Dreessen.", " a Front-end designer.", "a Back-end developer.", "a Full-stack expert."];
@@ -41,6 +102,31 @@ function deletingEffect() {
 
 typingEffect();
 
+
+// skillbar 
+var compareScrollPositionWithElementPosition = setInterval(compareScrollPositionWithElementPosition, 10);
+
+
+
+function getSkillsPosition(){
+  let elem = document.querySelector('.skills');
+  let elemPosition = elem.getBoundingClientRect();
+  return elemPosition.bottom;
+}
+getSkillsPosition();
+
+function compareScrollPositionWithElementPosition(){
+  if(getScrollPosition() >= getSkillsPosition()){
+    //clearInterval(getScrollPositionInterval);
+    clearInterval(compareScrollPositionWithElementPosition);
+    move();
+    move1();
+    move2();
+  }
+}
+
+
+
 function move() {
     var elem = document.querySelectorAll('.skill-percent');    
     var width = 1;
@@ -55,7 +141,6 @@ function move() {
     }
   }
 
-  move();
 
   function move1() {
     var elem = document.querySelectorAll('.skill-percent');    
@@ -71,7 +156,7 @@ function move() {
     }
   }
 
-  move1();
+
 
   function move2() {
     var elem = document.querySelectorAll('.skill-percent');    
@@ -87,4 +172,7 @@ function move() {
     }
   }
 
-  move2();
+
+
+
+  
