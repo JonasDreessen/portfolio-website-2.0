@@ -342,4 +342,10 @@ a:visited {
     height: 100vh;
   }
 }
+
+@media only screen and (max-width: 994px) {
+  .navbar {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */

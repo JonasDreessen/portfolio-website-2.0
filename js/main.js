@@ -117,15 +117,12 @@ getSkillsPosition();
 
 function compareScrollPositionWithElementPosition(){
   if(getScrollPosition() >= getSkillsPosition()){
-    //clearInterval(getScrollPositionInterval);
     clearInterval(compareScrollPositionWithElementPosition);
     move();
     move1();
     move2();
   }
 }
-
-
 
 function move() {
     var elem = document.querySelectorAll('.skill-percent');    
