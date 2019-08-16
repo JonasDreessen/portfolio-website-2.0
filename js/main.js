@@ -36,6 +36,7 @@ function giveNavbarFixedPosition(){
   navbar.style.position = 'fixed';
   navbar.style.zIndex = '10000';
   navbar.style.backgroundColor = "white";
+  TweenMax.to(document.getElementById("navbarNavDropdown"), 4, { ease: Circ.easeOut, x: 50 });
   hideNavbrand();
 }
 
@@ -43,6 +44,7 @@ function giveNavbarAbsolutePosition(){
   var navbar = document.querySelector('.navbar');
   navbar.style.position = 'absolute';
   navbar.style.backgroundColor = "transparent";
+  TweenMax.to(document.getElementById("navbarNavDropdown"), 4, { ease: Circ.easeOut, x: 0 });
   showNavBrand();
 }
 
@@ -168,6 +170,9 @@ function move() {
       }
     }
   }
+
+  //TweenMax.to(document.getElementById("navbarNavDropdown"), 2.5, { ease: Circ.easeOut, y: 50 });
+  //TweenLite.to(document.querySelector(".navbar-nav"), 2.5, { ease: Circ.easeOut, y: -500 });
 
 
 
