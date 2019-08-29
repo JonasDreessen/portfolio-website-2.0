@@ -74,10 +74,10 @@ function typingEffect() {
         if (word.length > 0) {
             animatedText_span.innerHTML += word.shift();
         } else {
-            deletingEffect();
+          setTimeout(deletingEffect, 1200);
             return false;
         };
-        timer = setTimeout(loopTyping, 100);
+        timer = setTimeout(loopTyping, 40);
     };
     loopTyping();
 };
@@ -94,10 +94,10 @@ function deletingEffect() {
             } else {
                 i = 0;
             };
-            typingEffect();
+            setTimeout(typingEffect, 500);
             return false;
         };
-        timer = setTimeout(loopDeleting, 100);
+        timer = setTimeout(loopDeleting, 50);
     };
     loopDeleting();
 };
